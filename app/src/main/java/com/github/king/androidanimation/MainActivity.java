@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void alpha(View view) {
+
     }
 
     public void scale(View view) {
