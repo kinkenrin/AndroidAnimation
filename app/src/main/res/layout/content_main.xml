@@ -24,4 +24,12 @@
         app:layout_constraintStart_toEndOf="@+id/btn_viewAnimation"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btn_pointAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pointView"
+        android:text="pointView"
+        app:layout_constraintStart_toEndOf="@+id/btn_dynamicViewAnim"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

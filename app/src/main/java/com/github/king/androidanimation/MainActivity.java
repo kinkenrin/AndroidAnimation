@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.github.king.androidanimation.R;
 import com.github.king.androidanimation.viewAnimation.DynamicViewAnimActivity;
 import com.github.king.androidanimation.viewAnimation.ViewAnimationActivity;
 
@@ -38,5 +37,9 @@ public class MainActivity extends AppCompatActivity {
     public void dynamicViewAnim(View view) {
         startActivity(DynamicViewAnimActivity.initIntent(getApplicationContext()));
 
+    }
+
+    public void pointView(View view) {
+        startActivity(PointViewAnimActivity.initIntent(getApplicationContext()));
     }
 }

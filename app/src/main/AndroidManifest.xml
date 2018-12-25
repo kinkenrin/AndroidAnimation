@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".viewAnimation.ViewAnimationActivity" />
-        <activity android:name=".viewAnimation.DynamicViewAnimActivity"></activity>
+        <activity android:name=".viewAnimation.DynamicViewAnimActivity" />
+        <activity android:name=".PointViewAnimActivity" />
     </application>
 
 </manifest>
