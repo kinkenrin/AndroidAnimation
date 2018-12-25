@@ -46,11 +46,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_trans" />
 
+    <Button
+        android:id="@+id/btn_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="color"
+        android:text="color"
+        app:layout_constraintStart_toEndOf="@+id/btn_set"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans" />
+
+    <Button
+        android:id="@+id/btn_char"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="char"
+        app:layout_constraintStart_toEndOf="@+id/btn_color"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans" />
+
     <TextView
         android:id="@+id/tv_animation"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:background="#ff0000"
+        android:gravity="center"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
