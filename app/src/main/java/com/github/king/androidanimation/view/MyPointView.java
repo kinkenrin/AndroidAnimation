@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.BounceInterpolator;
 
@@ -63,5 +64,7 @@ public class MyPointView extends View {
         animator.start();
     }
 
-
+    public void setPoint(float num) {
+        Log.i("aaa", "aaaa=" + num);
+    }
 }
