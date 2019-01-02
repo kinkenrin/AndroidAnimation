@@ -44,6 +44,7 @@ public class TopTextView extends View {
         mPaint.setColor(Color.BLACK);
         mPaint.setTextSize(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 30, getResources().getDisplayMetrics()));
         mPaint.setTextAlign(Paint.Align.LEFT);
+
     }
 
     @Override
@@ -61,9 +62,17 @@ public class TopTextView extends View {
 //        float bottom = baseLineY + fm.bottom;
         //因为top = baseLineY + fm.top;
         //所以 baseLineY = top - fm.top;
-
-        Paint.FontMetrics fm = mPaint.getFontMetrics();
+        //给定左上角顶点时计算方法
+        /*Paint.FontMetrics fm = mPaint.getFontMetrics();
         float baseLineY = mTopY - fm.top;
+        float baseLineX = mTopX;
+        float ascent = baseLineY + fm.ascent;
+        float descent = baseLineY + fm.descent;
+        float bottom = baseLineY + fm.bottom;*/
+
+        //给定中间线时计算方法
+        Paint.FontMetrics fm = mPaint.getFontMetrics();
+        float baseLineY = mTopY + (fm.bottom - fm.top) / 2 - fm.bottom;
         float baseLineX = mTopX;
         float ascent = baseLineY + fm.ascent;
         float descent = baseLineY + fm.descent;
@@ -71,7 +80,7 @@ public class TopTextView extends View {
 
         //画顶点
         mPaint.setStrokeWidth(10);
-        mPaint.setColor(Color.BLACK);
+        mPaint.setColor(Color.GREEN);
         canvas.drawPoint(mTopX, mTopY, mPaint);
         mPaint.setStrokeWidth(1);
         //写文字
