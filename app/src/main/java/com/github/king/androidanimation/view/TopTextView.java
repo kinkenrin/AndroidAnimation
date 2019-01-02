@@ -65,6 +65,9 @@ public class TopTextView extends View {
         Paint.FontMetrics fm = mPaint.getFontMetrics();
         float baseLineY = mTopY - fm.top;
         float baseLineX = mTopX;
+        float ascent = baseLineY + fm.ascent;
+        float descent = baseLineY + fm.descent;
+        float bottom = baseLineY + fm.bottom;
 
         //画顶点
         mPaint.setStrokeWidth(10);
@@ -83,17 +86,17 @@ public class TopTextView extends View {
         mPaint.setColor(Color.BLUE);
         canvas.drawLine(baseLineX, mTopY, 3000, mTopY, mPaint);
 
-//        //画ascent
-//        mPaint.setColor(Color.GREEN);
-//        canvas.drawLine(baseLineX, ascent, 3000, ascent, mPaint);
-//
-//        //画descent
-//        mPaint.setColor(Color.YELLOW);
-//        canvas.drawLine(baseLineX, descent, 3000, descent, mPaint);
-//
-//        //画bottom
-//        mPaint.setColor(Color.RED);
-//        canvas.drawLine(baseLineX, bottom, 3000, bottom, mPaint);
+        //画ascent
+        mPaint.setColor(Color.GREEN);
+        canvas.drawLine(baseLineX, ascent, 3000, ascent, mPaint);
+
+        //画descent
+        mPaint.setColor(Color.YELLOW);
+        canvas.drawLine(baseLineX, descent, 3000, descent, mPaint);
+
+        //画bottom
+        mPaint.setColor(Color.RED);
+        canvas.drawLine(baseLineX, bottom, 3000, bottom, mPaint);
 
 
     }
