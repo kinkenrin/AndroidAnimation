@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PointViewAnimActivity">
+
+
+    <com.github.king.androidanimation.view.FontView
+        android:id="@+id/pv_point"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <com.github.king.androidanimation.view.TopTextView
+        android:id="@+id/ttv_text"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/pv_point" />
+</android.support.constraint.ConstraintLayout>

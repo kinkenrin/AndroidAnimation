@@ -42,4 +42,8 @@ public class MainActivity extends AppCompatActivity {
     public void pointView(View view) {
         startActivity(PointViewAnimActivity.initIntent(getApplicationContext()));
     }
+
+    public void fontView(View view) {
+        startActivity(FontViewActivity.initIntent(getApplicationContext()));
+    }
 }
