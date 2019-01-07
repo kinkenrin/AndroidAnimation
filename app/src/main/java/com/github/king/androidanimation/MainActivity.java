@@ -46,4 +46,8 @@ public class MainActivity extends AppCompatActivity {
     public void fontView(View view) {
         startActivity(FontViewActivity.initIntent(getApplicationContext()));
     }
+
+    public void paintView(View view) {
+        startActivity(PaintViewActivity.initIntent(getApplicationContext()));
+    }
 }
