@@ -50,4 +50,8 @@ public class MainActivity extends AppCompatActivity {
     public void paintView(View view) {
         startActivity(PaintViewActivity.initIntent(getApplicationContext()));
     }
+
+    public void redPoint(View view) {
+        startActivity(RedPointViewActivity.initIntent(getApplicationContext()));
+    }
 }

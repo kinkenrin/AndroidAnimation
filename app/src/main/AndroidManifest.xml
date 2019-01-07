@@ -24,6 +24,7 @@
         <activity android:name=".PointViewAnimActivity" />
         <activity android:name=".FontViewActivity" />
         <activity android:name=".PaintViewActivity" />
+        <activity android:name=".RedPointViewActivity" />
     </application>
 
 </manifest>
