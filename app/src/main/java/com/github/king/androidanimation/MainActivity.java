@@ -54,4 +54,8 @@ public class MainActivity extends AppCompatActivity {
     public void redPoint(View view) {
         startActivity(RedPointViewActivity.initIntent(getApplicationContext()));
     }
+
+    public void telescope(View view) {
+        startActivity(TelescopeViewActivity.initIntent(getApplicationContext()));
+    }
 }

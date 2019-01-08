@@ -25,6 +25,7 @@
         <activity android:name=".FontViewActivity" />
         <activity android:name=".PaintViewActivity" />
         <activity android:name=".RedPointViewActivity" />
+        <activity android:name=".TelescopeViewActivity" />
     </application>
 
 </manifest>
