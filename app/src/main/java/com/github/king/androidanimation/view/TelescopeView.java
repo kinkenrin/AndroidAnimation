@@ -6,7 +6,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.BitmapShader;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.graphics.Rect;
 import android.graphics.Shader;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
@@ -67,9 +66,10 @@ public class TelescopeView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if (mBitmapBG == null) {
-            mBitmapBG = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
-            Canvas canvasbg = new Canvas(mBitmapBG);
-            canvasbg.drawBitmap(mBitmap, null, new Rect(0, 0, getWidth(), getHeight()), mPaint);
+//            mBitmapBG = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
+//            Canvas canvasbg = new Canvas(mBitmapBG);
+//            canvasbg.drawBitmap(mBitmap, null, new Rect(0, 0, getWidth(), getHeight()), mPaint);
+            mBitmapBG = Bitmap.createScaledBitmap(mBitmap, getWidth(), getHeight(), true);
         }
 
         if (mDx != -1 && mDy != -1) {
