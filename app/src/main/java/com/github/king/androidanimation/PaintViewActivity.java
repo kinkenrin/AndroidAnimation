@@ -8,6 +8,8 @@ import android.view.View;
 
 import com.github.king.androidanimation.view.PaintView;
 
+import io.reactivex.Observable;
+
 public class PaintViewActivity extends AppCompatActivity {
 
     private PaintView mPv_view;
@@ -22,6 +24,7 @@ public class PaintViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pain_view);
         mPv_view = findViewById(R.id.pv_view);
+        Observable.just("ddd").onTerminateDetach();
 
     }
 

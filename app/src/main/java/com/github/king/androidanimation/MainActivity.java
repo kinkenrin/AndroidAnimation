@@ -58,4 +58,8 @@ public class MainActivity extends AppCompatActivity {
     public void telescope(View view) {
         startActivity(TelescopeViewActivity.initIntent(getApplicationContext()));
     }
+
+    public void recyclerView(View view) {
+        startActivity(RecyclerViewActivity.initIntent(getApplicationContext()));
+    }
 }

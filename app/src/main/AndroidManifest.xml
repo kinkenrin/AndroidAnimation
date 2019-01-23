@@ -26,6 +26,7 @@
         <activity android:name=".PaintViewActivity" />
         <activity android:name=".RedPointViewActivity" />
         <activity android:name=".TelescopeViewActivity" />
+        <activity android:name=".RecyclerViewActivity" />
     </application>
 
 </manifest>
